@@ -1,0 +1,104 @@
+:root {
+    --primary-bg-color: #250A0F;
+    --text-color: #fff;
+    --main-text-color: #fff;
+    --main-btn-bg-color: #fff;
+  }
+  
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+  
+body {
+    background-color: var(--primary-bg-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Create a container for the main content */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+  
+/* Header styling */
+.page-header { /* Header and navigation elements are encapsulated together */
+  margin-left: 150px;
+}
+
+header {
+    color: var(--main-text-color);
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-weight: bolder;
+    font-size: 96px;
+    text-align: left;
+    text-shadow: 3px -2px 12px rgba(255, 255, 255, 0.4); /* white with 40% opacity */
+}
+  
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Koh Santepheap", serif;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+nav a:hover {
+  color: var(--primary-bg-color); /* change text color on hover */
+  background-color: var(--main-text-color); /* add background */
+}
+
+/* Fonts */
+.koh-santepheap-thin {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.koh-santepheap-light {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.koh-santepheap-regular {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.koh-santepheap-bold {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.koh-santepheap-black {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
