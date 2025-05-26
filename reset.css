@@ -24,15 +24,6 @@ body {
   min-height: 100vh;
 }
 
-/* Media responsive */
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
 h1,
 h2,
 h3,

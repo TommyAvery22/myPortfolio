@@ -1,76 +1,127 @@
 :root {
     --primary-bg-color: #250A0F;
-    --text-color: #fff;
     --main-text-color: #fff;
+    --main-hover-color: #b30e0e;
     --main-btn-bg-color: #fff;
   }
   
-body,
-h1,
-p {
-    margin: 0;
-    padding: 0;
+body {
+  margin-inline: 120px;
+  padding: 0;
 }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 30px;
+h1,
+h2,
+header {
+  font-family: "Koh Santepheap", serif;
+  color: var(--main-text-color);
+  font-weight: bolder;
 }
   
 body {
-    background-color: var(--primary-bg-color);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: var(--primary-bg-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* disables manual scrolling */
 }
-
-/* Create a container for the main content */
-.container {
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px;
-    align-items: center;
-}
-  
-/* Header styling */
-.page-header { /* Header and navigation elements are encapsulated together */
-  margin-left: 150px;
-}
-
+ 
+/* Font sizing and unique styling */
 header {
-    color: var(--main-text-color);
-    font-family: "Koh Santepheap", serif;
-    font-weight: 700;
-    font-weight: bolder;
-    font-size: 96px;
-    text-align: left;
-    text-shadow: 3px -2px 12px rgba(255, 255, 255, 0.4); /* white with 40% opacity */
+  font-size: 160px;
+  text-shadow: 3px -2px 12px rgba(255, 255, 255, 0.4); /* white with 40% opacity */
 }
-  
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center horizontally */
+  justify-content: center;  /* Center vertically */
+  height: 100vh;            /* Take full viewport height */
+  text-align: center;       /* Center header text */
+}
+
+.glow-shimmer {
+  position: relative;
+  text-shadow:
+    0 0 5px var(--main-text-color),
+    0 0 10px var(--main-text-color),
+    0 0 20px var(--main-text-color),
+    0 0 40px var(--main-text-color);
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 3px var(--main-text-color),
+      0 1 6px var(--main-text-color);
+    opacity: 1;
+  }
+
+  50% {
+    text-shadow:
+      0 0 6px var(--main-text-color),
+      0 3 9px var(--main-text-color);
+    opacity: 0.9;
+  }
+
+  100% {
+    text-shadow:
+      0 0 1px var(--main-text-color),
+      2 0 120px var(--main-text-color);
+    opacity: 1;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-start;
+} 
+
+.image-container img {
+  flex: 1 1 calc(33.333% - 20px); /* 3 items per row minus gap */
+  max-width: calc(33.333% - 20px);
+  height: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.image-container img:hover {
+}
+
 /* Navigation styling */
 nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 80px;
 }
 
 nav a {
   text-decoration: none;
-  font-family: "Koh Santepheap", serif;
+  font-family: "Marmelad", sans-serif;
+  font-size: 30px;
   font-weight: 700;
-  color: var(--main-text-color);
-}
-
-nav a:hover {
-  color: var(--primary-bg-color); /* change text color on hover */
+  color: var(--primary-bg-color);
   background-color: var(--main-text-color); /* add background */
 }
 
-/* Fonts */
+nav a:hover {
+  color: darkorange; /* add background */
+}
+
+/* Font styling */
 .koh-santepheap-thin {
   font-family: "Koh Santepheap", serif;
   font-weight: 100;
@@ -100,5 +151,12 @@ nav a:hover {
   font-weight: 900;
   font-style: normal;
 }
+
+.marmelad-regular {
+  font-family: "Marmelad", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 
