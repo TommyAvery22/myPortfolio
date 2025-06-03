@@ -1,35 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Thomas Avery's Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>Thomas Avery's Portfolio</title>
 
-    <link rel="stylesheet" href="reset.css" /> 
-    <link rel="stylesheet" href="style.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Google fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">    
+  <!-- JavaScript -->
+  <script defer src="main.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Roboto:wght@100..900&family=Rock+Salt&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    
-    <div class="page-header">
-        <div class="glow-shimmer">
-            <header>Thomas Avery</header>
-        </div>
 
-        
-        <nav>  
-            <ul>
-                <!-- Scrolls to section when clicked -->
-                <li><a onclick="scrollToSection('section1')">my work</button></li>
-                <li><a onclick="scrollToSection('section2')">about me</button></li>
-                <li><a onclick="scrollToSection('section3')">contact</button></li>
-            </ul>
-        </nav>
+  <!-- Centered Header and Navigation -->
+  <div class="page-header">
+    <div class="glow-shimmer">
+      <header>Thomas Avery</header>
     </div>
-</body>
-</html>
+
+    <nav>
+      <ul>
+        <li><button data-target="#work">my work</button></li>
+        <li><button data-target="#about">about</button></li>
+        <li><button data-target="#contact">contact</button></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Scrollable Sections -->
+  <section id="work" class="content-section">
+    <h2>My Work</h2>
+    <p>Your content here...</p>
+  </section>
+
+  <section id="about" class="content-section">
+    <h2>About</h2>
+    <p>Your content here...</p>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact Me</h2>
+    <p>Your content here...</p>
+  </section>
