@@ -1,7 +1,7 @@
 :root {
     --primary-bg-color: #250A0F;
-    --main-text-color: #fff;
-    --main-hover-color: #b30e0e;
+    --main-text-color: #000000;
+    --main-hover-color: #ff4800;
     --main-btn-bg-color: #fff;
   }
   
@@ -26,9 +26,22 @@ header {
 }
 
 /* Font sizing and unique styling */
+h1,
+h2,
+header {
+  font-family: "Koh Santepheap", serif;
+  font-weight: bolder;
+}
+
 header {
   font-size: 160px;
-  text-shadow: 3px -2px 12px rgba(255, 255, 255, 0.4); /* white with 40% opacity */
+  color: white;
+  text-shadow: 3px -2px 12px rgba(224, 220, 220, 0.4); /* white with 40% opacity */
+}
+
+h1,
+h2 {
+  color: var(--main-text-color);
 }
 
 h1 {
@@ -52,10 +65,10 @@ h2 {
 .glow-shimmer {
   position: relative;
   text-shadow:
-    0 0 5px var(--main-text-color),
-    10 0 10px var(--main-text-color),
-    5 5 20px var(--main-text-color),
-    5 10 40px var(--main-text-color);
+    0 0 5px var(--main-btn-bg-color),
+    10 0 10px var(--main-btn-bg-color),
+    5 5 20px var(--main-btn-bg-color),
+    5 10 40px var(--main-btn-bg-color);
   animation: glow 5s ease-in-out infinite alternate;
 }
 
@@ -129,7 +142,7 @@ nav button {
   font-size: 30px;
   font-weight: 700;
   color: var(--primary-bg-color);
-  background-color: var(--main-text-color);
+  background-color: var(--main-btn-bg-color);
   border: none;
   cursor: pointer;
 }
@@ -143,8 +156,8 @@ nav button:hover {
 .content-section {
   height: 100vh;
   overflow-y: auto;
-  padding: 40px;
-  font-size: 28px;
+  background-color: white;
+  padding: 100px;
   scroll-snap-align: start;
   border-top: 1px solid #ddd;
   color: #000;
